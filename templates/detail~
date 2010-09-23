@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Cloudy Water Sport Template</title>
+<meta name="keywords" content="padel tenis, ����� ������, ���������" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+	<h1>Федерация <p>Падел Тенниса</h1>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="#">Федерация</a></li>
+		<li><a href="#">О Падел Теннисе</a></li>
+		<li><a href="#">Партнерам</a></li>
+		<li><a href="#">Пресс-комната</a></li>
+	</ul>
+</div>
+<div id="content">
+<div id="left">
+	<p> Логин </p>
+	<br/>
+	<p> Регистрация </p>
+	<br/>
+	<br/>
+	<br/>
+	<p> Последнее видео </p>
+	<br/>
+	<br/>
+	<br/>
+	<p> Последний фотоальбом </p>
+</div>
+	<div id="cleft">
+		<h2>Новости Федерации</h2>
+		<h3>There's a voice</h3>
+		<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. <a href="#">More&#8230;</a></p>
+		<h3>Every stop I make</h3> 
+		<p>Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. <a href="#">More&#8230;</a></p>
+	</div>
+	<div id="cright">
+		<h2>Падел Блоги</h2>
+		<h3>There's a voice</h3>
+		<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. <a href="#">More&#8230;</a></p>
+		<h3>Every stop I make</h3> 
+		<p>Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. <a href="#">More&#8230;</a></p>
+		
+		
+	</div>
+<div id="logo">
+	
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+</div>
+<div id="center">
+	<p>
+	Презентация игры в Падел Теннис (Flash)
+	</p>
+</div>
+	</div>
+<div id="footer">
+	<p>Copyright &copy; 2010 Padel Tennis.
+	 Webdesign by Ki</p>
+</div>
+</body>
+</html>

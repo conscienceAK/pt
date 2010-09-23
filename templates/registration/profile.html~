@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Профиль пользователя </h1>
+{{ profile }}
+
+
+<a href={{ msg01 }}>{{ msg02 }}</a>
+
+{% endblock content %}

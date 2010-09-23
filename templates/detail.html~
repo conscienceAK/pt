@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="left">
+	{% block left1 %} {% endblock left1 %}
+	<br/>
+	{% block left2 %} {% endblock left2 %}
+
+</div>
+
+<div id="dcenter">
+	{% block dcenter %} {% endblock dcenter %}
+</div>
+
+<div id="logo">
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+</div>
+
+{% endblock content %}

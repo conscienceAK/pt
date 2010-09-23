@@ -1,0 +1,28 @@
+from django.conf.urls.defaults import *
+# Uncomment the next two lines to enable the admin:
+from django.contrib import admin
+# import registration
+from registration.forms import RegistrationFormUniqueEmail 
+admin.autodiscover()
+import os.path
+site_media = os.path.join(
+    os.path.dirname(__file__), 'media')
+
+
+urlpatterns = patterns('',
+    # Example:
+    # (r'^pt/', include('pt.foo.urls')),
+
+    url(r'/register', 'registration.views.register', {'form_class': RegistrationFormUniqueEmail}, name='registration_register'),
+    url('', include('registration.urls')),
+    (r'^accounts/', include('registration.urls')), 
+    (r'^accounts/profile/', include('profiles.urls')),
+
+    (r'^$', include('menu.urls')),
+    (r'^admin/', include(admin.site.urls)),
+    # Uncomment the admin/doc line below to enable admin documentation:
+    (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    (r'^media/(?P<path>.*)', 'django.views.static.serve', { 'document_root': site_media }),
+    
+)
+

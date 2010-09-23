@@ -1,0 +1,160 @@
+/************* GENERAL CSS ************/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+	text-align: justify;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: green;
+}
+
+a {
+	font-weight: bold;	
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+/************* HEADER STUFF ************/
+
+#header {
+	width: 970px;
+	height: 120px;
+	margin: 0px auto;
+	padding: 10px 0px;
+	background: #FFFFFF url(header.jpg);
+}
+
+#header h1 {
+	margin: 0px;
+	padding: 0px 0px 0px 5px;
+	text-align: left;
+	text-indent: 300px;
+	color: #FFFFFF;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+#header h2 {
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	text-align: left;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+/************* MENU ************/
+
+#menu {
+	width: 970px;
+	margin: 0px auto;
+	padding: 5px 0px 5px 0px;
+	background-color: green;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 5px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	background-color: #333333;
+}
+
+/************* CONTENT ************/
+
+#content {
+	width: 970px;
+	margin: 0px auto;
+	padding: 20px 0px 0px 0px;
+}
+
+#content h2, #content h3, #content h4, #content h5, #content h6 {
+	font-weight: normal;
+}
+
+#content p, #content ul, #content ol {
+	line-height: 150%;
+}
+
+#left, #cleft, #cright, #logo, #center, #dcenter {
+	margin:5px;
+	float: left;
+	border-style: dashed;
+	border-width: 1px;
+	padding: 0px 20px 40px 20px;
+}
+#left {
+	width: 145px;
+	margin-left:0px;
+	
+}
+
+#logo {
+	width: 70px;
+	float: right;
+	margin-right:0px;
+}
+
+#cleft {
+	 width: 400px;
+	 float: left;
+	 
+}
+
+#cright {
+	width: 155px;
+	float: left;
+	
+
+}
+ 
+#center {
+	 width: 610px;
+	 float: left;
+	 margin-left:195px;
+	 
+}
+
+#dcenter {
+	 width: 605px;
+	 float: left;
+	 
+}
+/************* FOOTER ************/
+
+#footer {
+	clear: both;
+	width: 610px;
+	margin: 0px auto;
+	font-size: 9px;
+	text-align: center;
+	padding: 2px;
+	color: #333333;
+}

@@ -1,0 +1,15 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<h1> Профиль пользователя </h1>
+{{ object_list }}
+
+{% if user.is_authenticated %}
+Здравствуйте, {{ user.username }}!
+<a href="{% url auth_logout %}">Выйти</a>
+
+{% else %}
+<a href="{% url auth_login %}">Войти</a>
+{% endif %}
+
+{% endblock content %}

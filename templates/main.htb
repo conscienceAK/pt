@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="left">
+	<a href="/accounts/login/">Вход / Регистрация</a>
+</div>
+
+<div id="dcenter">
+	{% block dcenter %} {% endblock dcenter %}
+</div>
+
+<div id="logo">
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+</div>
+
+{% endblock content %}
