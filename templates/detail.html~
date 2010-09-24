@@ -1,16 +1,13 @@
-{% extends "base.html" %}
+{% extends "main.html" %}
 
 {% block content %}
-
-<div id="left">
-	{% block left1 %} {% endblock left1 %}
-	<br/>
-	{% block left2 %} {% endblock left2 %}
 
 </div>
 
 <div id="dcenter">
-	{% block dcenter %} {% endblock dcenter %}
+	{% block dcenter %} 
+	{% for n in object_detail %}
+	{% endblock dcenter %}
 </div>
 
 <div id="logo">
@@ -23,6 +20,9 @@
 	<p>Logo</p>
 	<br/>
 	<p>Logo</p>
+</div>
+<div id="center">
+	{% block center %} {% endblock center %}
 </div>
 
 {% endblock content %}

@@ -1,16 +1,15 @@
-{% extends "base.html" %}
+{% extends "main.html" %}
 
 {% block content %}
-
-<div id="left">
-	{% block left1 %} {% endblock left1 %}
-	<br/>
-	{% block left2 %} {% endblock left2 %}
 
 </div>
 
 <div id="dcenter">
-	{% block dcenter %} {% endblock dcenter %}
+	{% block dcenter %} 
+	{% for n in object_detail %}
+	{{ object_id }}
+	{% endfor %}}
+	{% endblock dcenter %}
 </div>
 
 <div id="logo">

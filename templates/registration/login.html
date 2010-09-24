@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
+<center>
 <h1>Авторизация</h1>
 {% if user.is_authenticated %}
 Уважаемый {{ user.username }}, Вы же уже авторизорваны.
 Для выхода из системы нажмите <a href="{% url auth_logout %}">"выйти"</a>.
+</center>
 
 {% else %}
 

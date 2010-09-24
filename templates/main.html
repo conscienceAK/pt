@@ -3,11 +3,25 @@
 {% block content %}
 
 <div id="left">
-	<a href="/accounts/login/">Вход / Регистрация</a>
+	{% if user.is_authenticated %}
+	<h2>Добро пожаловать, {{ user.username }}!</h2>
+	<a href="/accounts/out/">Выход</a>
+	{% else %}
+		<a href="/accounts/login/">Вход</a>
+		<br/>
+		<a href="/accounts/register/">Регистрация</a>
+	{% endif %}
+		
 </div>
 
 <div id="dcenter">
-	{% block dcenter %} {% endblock dcenter %}
+	{% block dcenter %} 
+	{% for n in object_list %}
+	<p><small> {{ n.pub_date }} </small><br/>
+	<a href="news/{{ n.id }}/">{{ n.title }}</a></p>
+
+	{% endfor %}
+	{% endblock dcenter %}
 </div>
 
 <div id="logo">
