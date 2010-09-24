@@ -52,6 +52,8 @@ class News(models.Model):
 	title = models.CharField("Заголовок новости", max_length=300)
 	body = models.TextField("Текст новости")
 	pub_date = models.DateTimeField("Дата создания", auto_now_add=True)
+	def __unicode__(self):
+		return self.title
 
 # TODO 
 # class Topblogs(models.Model):
