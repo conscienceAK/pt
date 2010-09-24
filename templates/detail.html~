@@ -6,7 +6,9 @@
 
 <div id="dcenter">
 	{% block dcenter %} 
-	{% for n in object_detail %}
+	<small>{{ object.pub_date }}</small><br/>
+	<h1>{{ object.title }}</h1>
+	{{ object.body }}
 	{% endblock dcenter %}
 </div>
 
