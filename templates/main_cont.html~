@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="left">
+	{% if user.is_authenticated %}
+	<h2>Добро пожаловать, {{ user.username }}!</h2>
+	<a href="/accounts/out/">Выход</a>
+	{% else %}
+		<a href="/accounts/login/">Вход</a>
+		<br/>
+		<a href="/accounts/register/">Регистрация</a>
+	{% endif %}
+		
+</div>
+
+<div id="dcenter">
+	{% block dcenter %} 
+	{% for n in  m_list.all %}
+	<p><small> {{ n.pub_date }} </small><br/>
+	<a href="/contents/{{ n.id }}/">{{ n.title }}</a></p>
+
+	{% endfor %}
+	{% endblock dcenter %}
+</div>
+
+<div id="logo">
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+</div>
+
+{% endblock content %}
