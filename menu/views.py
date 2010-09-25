@@ -2,12 +2,13 @@
 
 #from django.views.generic.list_detail import object_list
 from django.shortcuts import render_to_response, get_object_or_404
-from models import *
+from models import MenuItem, Info
+from django.template import RequestContext
 
-def submenu_list(request, object_id)
-	p = ger_object_or_404(MenuItem, order=object_id)
-	list = get_object_or_404(Info, menu_item=p)
-	return render_to_response('main_cont.html', {'submenu_list': list})
+def m_list(request, m_id):
+	#p = MenuItem.objects.filter(pk=m_id)
+	mlist = Info.objects.all() 
+	return render_to_response('main_cont.html', {"m_list": mlist}, context_instance=RequestContext(request))
 
 #def info_list(request, object_id, **kwargs):
 #	queryset=Info.objects.filter(pk=object_id)
