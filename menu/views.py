@@ -7,7 +7,7 @@ from django.template import RequestContext
 
 def m_list(request, m_id):
 	#p = MenuItem.objects.filter(pk=m_id)
-	mlist = Info.objects.all() 
+	mlist = MenuItem.objects.get(id=m_id) 
 	return render_to_response('main_cont.html', {"m_list": mlist}, context_instance=RequestContext(request))
 
 #def info_list(request, object_id, **kwargs):

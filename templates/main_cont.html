@@ -16,9 +16,9 @@
 
 <div id="dcenter">
 	{% block dcenter %} 
-	{% for m in  m_list.all %}
+	{% for m in  m_list.info_set.all %}
 	<p><small> {{ n.pub_date }} </small><br/>
-	<a href="/contents/{{ m.id }}/">{{ m.title }}</a></p>
+	<a href="{{ m.id }}/">{{ m.title }}</a></p>
 
 	{% endfor %}
 	{% endblock dcenter %}

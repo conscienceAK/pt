@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+</div>
+
+<div id="dcenter">
+	{% block dcenter %} 
+	<h1>{{ object.title }}</h1>
+	{{ object.body }}
+	{% endblock dcenter %}
+</div>
+
+<div id="logo">
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+	<br/>
+	<p>Logo</p>
+</div>
+<div id="center">
+	{% block center %} {% endblock center %}
+</div>
+
+{% endblock content %}
