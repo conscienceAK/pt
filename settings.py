@@ -75,7 +75,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'pt.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
@@ -89,6 +89,11 @@ TEMPLATE_DIRS = (
 )
 
 ACCOUNT_ACTIVATION_DAYS = 2
+
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = rel('tmp') # change this to a proper location
+
+PASSWORD_RESET_TIMEOUT_DAYS = 2
 
 AUTH_USER_EMAIL_UNIQUE = True
 EMAIL_HOST = 'localhost'

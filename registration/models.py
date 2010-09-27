@@ -9,6 +9,8 @@ from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
+from pt.profiles.models import CustomUser
+
 
 
 SHA1_RE = re.compile('^[a-f0-9]{40}$')
@@ -137,8 +139,8 @@ class RegistrationManager(models.Manager):
         username and a random salt.
         
         """
-        salt = hashlib.sha1.new(str(random.random())).hexdigest()[:5]
-        activation_key = hashlib.sha1.new(salt+user.username).hexdigest()
+        salt = hashlib.sha1(str(random.random())).hexdigest()[:5]
+        activation_key = hashlib.sha1(salt+user.username).hexdigest()
         return self.create(user=user,
                            activation_key=activation_key)
         
