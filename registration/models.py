@@ -103,7 +103,7 @@ class RegistrationManager(models.Manager):
             The ``User`` to relate the profile to.
         
         """
-        new_user = User.objects.create_user(username, email, password)
+        new_user = CustomUser.objects.create_user(username, email, password)
         new_user.is_active = False
         new_user.save()
         

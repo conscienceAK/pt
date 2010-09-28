@@ -5,7 +5,7 @@
 <div id="left">
 	{% if user.is_authenticated %}
 	<h2>Добро пожаловать, {{ user.username }}!</h2>
-	<a href="/accounts/out/">Выход</a>
+	<a href="/accounts/logout/">Выход</a>
 	{% else %}
 		<a href="/accounts/login/">Вход</a>
 		<br/>

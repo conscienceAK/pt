@@ -1,3 +1,4 @@
+#coding: utf-8
 # Django settings for pt project.
 import os
 rel = lambda *x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)

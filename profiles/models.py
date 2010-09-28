@@ -5,14 +5,14 @@ from django.contrib.auth.models import User, UserManager
 
 
 class CustomUser(User):
-    	surname = models.CharField("Фамилия", max_length=200,)
-	name = models.CharField("Имя", max_length=200,)
-	city = models.CharField("Город", max_length=200,)
-	job = models.CharField("Деятельность", max_length=200,) 
-	interests = models.CharField("Интересы", max_length=200,)
-	about = models.CharField("О себе)", max_length=200,)
-	achievements = models.CharField("Достижения", max_length=200,)
-	deserts = models.CharField("Заслуги", max_length=200,)
+    	surname = models.CharField("Фамилия", max_length=200,blank=True)
+	name = models.CharField("Имя", max_length=200,blank=True)
+	city = models.CharField("Город", max_length=200,blank=True)
+	job = models.CharField("Деятельность", max_length=200,blank=True) 
+	interests = models.CharField("Интересы", max_length=200,blank=True)
+	about = models.CharField("О себе)", max_length=200,blank=True)
+	achievements = models.CharField("Достижения", max_length=200,blank=True)
+	deserts = models.CharField("Заслуги", max_length=200,blank=True)
    	
 	objects = UserManager()
 	

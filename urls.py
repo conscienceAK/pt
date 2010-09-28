@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     # Example:
     # (r'^pt/', include('pt.foo.urls')),
 
-    url(r'/register', 'registration.views.register', {'form_class': RegistrationFormUniqueEmail}, name='registration_register'),
+    url(r'/register$', 'registration.views.register', {'form_class': RegistrationFormUniqueEmail}, name='registration_register'),
     url('', include('registration.urls')),
     (r'^accounts/', include('registration.urls')), 
     (r'^accounts/profile/', include('profiles.urls')),
