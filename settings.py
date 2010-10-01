@@ -91,6 +91,7 @@ TEMPLATE_DIRS = (
 
 ACCOUNT_ACTIVATION_DAYS = 2
 
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = rel('tmp') # change this to a proper location
 
@@ -99,8 +100,8 @@ PASSWORD_RESET_TIMEOUT_DAYS = 2
 AUTH_USER_EMAIL_UNIQUE = True
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'padel'
+EMAIL_HOST_PASSWORD = 'padel'
 DEFAULT_FROM_EMAIL = 'info@padeltennis.ru'
 
 INSTALLED_APPS = (
